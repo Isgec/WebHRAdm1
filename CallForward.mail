@@ -1,0 +1,14 @@
+﻿<table border="0" cellspacing="0" cellpadding="0">
+<tr><td height="40px">The following service request has been escalated/forwarded to you for :-.</td></tr>
+<tr><td height="40px"><Details></td></tr>
+<tr><td height="40px">It was escalated/forwarded by <attendername></td></tr>
+	<tr>
+		<td height="40px">IT & Systems Support</td>
+	</tr>
+	<tr>
+		<td height="40px">Call Ref. No.: <CallID>
+	</td>
+	</tr>
+	<tr><td><img src="cid:image1" alt="Isgec" height="500" width="500" style="height:500px; width:500px" /></td></tr>
+</table>
+

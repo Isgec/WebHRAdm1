@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://WebHrms1.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://WebHrms1.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://WebHrms1.org/">
+      <s:element name="IsHoliday">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DataDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="OfficeID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="FinYear" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsHolidayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IsHolidayResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHoliday">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="OfficeID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHolidayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHolidayResult" type="tns:hrmOffices" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="hrmOffices">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="OfficeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="IsHolidaySoapIn">
+    <wsdl:part name="parameters" element="tns:IsHoliday" />
+  </wsdl:message>
+  <wsdl:message name="IsHolidaySoapOut">
+    <wsdl:part name="parameters" element="tns:IsHolidayResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHolidaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetHoliday" />
+  </wsdl:message>
+  <wsdl:message name="GetHolidaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetHolidayResponse" />
+  </wsdl:message>
+  <wsdl:portType name="_hrmWebServicesSoap">
+    <wsdl:operation name="IsHoliday">
+      <wsdl:input message="tns:IsHolidaySoapIn" />
+      <wsdl:output message="tns:IsHolidaySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHoliday">
+      <wsdl:input message="tns:GetHolidaySoapIn" />
+      <wsdl:output message="tns:GetHolidaySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="_hrmWebServicesSoap" type="tns:_hrmWebServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IsHoliday">
+      <soap:operation soapAction="http://WebHrms1.org/IsHoliday" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHoliday">
+      <soap:operation soapAction="http://WebHrms1.org/GetHoliday" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="_hrmWebServicesSoap12" type="tns:_hrmWebServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IsHoliday">
+      <soap12:operation soapAction="http://WebHrms1.org/IsHoliday" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHoliday">
+      <soap12:operation soapAction="http://WebHrms1.org/GetHoliday" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="_hrmWebServices">
+    <wsdl:port name="_hrmWebServicesSoap" binding="tns:_hrmWebServicesSoap">
+      <soap:address location="http://localhost/WebHrms1/App_Services/_hrmWebServices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="_hrmWebServicesSoap12" binding="tns:_hrmWebServicesSoap12">
+      <soap12:address location="http://localhost/WebHrms1/App_Services/_hrmWebServices.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

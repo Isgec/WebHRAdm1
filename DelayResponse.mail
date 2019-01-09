@@ -1,0 +1,15 @@
+﻿<table border="0" cellspacing="0" cellpadding="0">
+<tr><td height="40px">Employee Information Updated</td></tr>
+<tr><td height="40px">
+	<employeename>
+</td></tr>
+	<tr>
+		<td height="40px"><department></td>
+	</tr>
+	<tr>
+		<td height="40px">
+			<updatedon>
+	</td>
+	</tr>
+</table>
+

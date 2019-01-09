@@ -1,0 +1,38 @@
+﻿<table border="0" cellspacing="0" cellpadding="0">
+<tr><td height="40px">Your service request has been <b>now closed </b>by IT Helpdesk Team.</td></tr>
+<tr><td height="40px"><Details></td></tr>
+<tr><td height="40px">We hope that the service request was attended to your satisfaction by the concerned engineer. <b>Please feel free to send your feedback<br />
+	by replying to this mail.<br />
+	<br />
+	<br />
+	</b><i>Please refer to the IT Support Process posted in our Intranet site under Employee Information Section to escalate any issue. </i> <attendername></td></tr>
+	<tr>
+		<td height="40px">
+			<br />
+			<br />
+			<br />
+			<br />
+			IT & Systems Support</td>
+	</tr>
+	<tr>
+		<td height="40px">Call Ref. No.: <CallID>
+	</td>
+	</tr>
+	<tr>
+		<td height="40px">
+			Description: <CallDescription>
+	</td>
+	</tr>
+	<tr>
+		<td>====================================</td>
+	</tr>
+		<tr>
+		<td align="center">
+			<FeedBack>
+		</td>
+		</tr>
+		<tr>
+		<td>====================================</td>
+			
+		</tr>
+</table>

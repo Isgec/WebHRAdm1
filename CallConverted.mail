@@ -1,0 +1,29 @@
+﻿<table border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td height="50px" >&nbsp;</td>
+	</tr>
+<tr><td height="40px">As your Service Request requires change/enhancement to existing system, the same has been noted for discussion and further action at our end.</td></tr>
+<tr><td height="40px"><Details>We will keep you updated on the progress and will get back to you if any further details or approvals are required for delivering the same.</td></tr>
+	<tr>
+		<td height="40px">
+			<b>SCE Request&nbsp; No.:</b> <ConvertedReference>
+	</td>
+	</tr>
+	<tr>
+		<td height="40px">
+			<b>
+			Description:</b> <ConvertedRemarks>
+	</td>
+	</tr>
+	<tr>
+		<td height="50px" >&nbsp;
+			</br>
+			</br>
+		</td>
+	</tr>
+	<tr>
+		<td height="40px">
+			IT & Systems Support</td>
+	</tr>
+	<tr><td>====================================</td></tr>
+</table>

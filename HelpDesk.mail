@@ -1,0 +1,14 @@
+﻿<table border="0" cellspacing="0" cellpadding="0">
+<tr><td height="40px">Your service request has been logged.</td></tr>
+<tr><td height="40px"><Details></td></tr>
+<tr><td height="40px">It is being attended by <attendername></td></tr>
+	<tr>
+		<td height="40px">IT & Systems Support</td>
+	</tr>
+	<tr>
+		<td height="40px">Call Ref. No.: <CallID>
+	</td>
+	</tr>
+	<tr><td>=========================</td></tr>
+</table>
+
